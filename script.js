@@ -61,7 +61,7 @@ async function renderComics(offset, limit) {
                 <h3 class="card-title mt-2">${element.title}</h3>
                 <div class"mt-4">
                     <span class="card-price">$ ${price}</span>
-                    <button type="button" class="btn btn-primary" onclick="addToCart('${element.title.toString()}', ${price})">Agregar</button>
+                    <button type="button" class="btn btn-danger" onclick="addToCart('${element.title.toString()}', ${price})">Agregar</button>
                 </div>
             </div>        
         `;

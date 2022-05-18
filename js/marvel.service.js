@@ -8,8 +8,8 @@ export default class MarvelService {
   }
 
   /**
-   * @param {number} offset askldj
-   * @param {limit} limit askldj
+   * @param {number} offset 
+   * @param {limit} limit 
    */
   async getCharacters(offset, limit) {
     const response = await fetch(
@@ -22,8 +22,8 @@ export default class MarvelService {
   }
 
   /**
-   * @param {number} offset askldj
-   * @param {limit} limit askldj
+   * @param {number} offset 
+   * @param {limit} limit 
    */
   async getComics(offset, limit) {
     const response = await fetch(
