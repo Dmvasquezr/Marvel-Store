@@ -8,30 +8,30 @@ export default class MarvelService {
   }
 
   /**
-   * @param {number} offset 
-   * @param {limit} limit 
+   * @param {number} offset
+   * @param {limit} limit
    */
   async getCharacters(offset, limit) {
     const response = await fetch(
       `${this.apiUrl}characters?offset=${offset}&limit=${limit}&ts=${this._ts}&apikey=${this._publicKey}&hash=${this._hash}`
-    )
-    
+    );
+
     const data = await response.json();
-    
+
     return data.data.results;
   }
 
   /**
-   * @param {number} offset 
-   * @param {limit} limit 
+   * @param {number} offset
+   * @param {limit} limit
    */
   async getComics(offset, limit) {
     const response = await fetch(
       `${this.apiUrl}comics?offset=${offset}&limit=${limit}&ts=${this._ts}&apikey=${this._publicKey}&hash=${this._hash}`
-    )
-    
+    );
+
     const data = await response.json();
-    
+
     return data.data.results;
   }
 }
